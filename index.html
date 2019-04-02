@@ -1,0 +1,23 @@
+<!-- Include the JavaScript and CSS files -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://esotericsoftware.com/files/spine-player/3.7/spine-player.js"></script>
+  <link rel="stylesheet" href="https://esotericsoftware.com/files/spine-player/3.7/spine-player.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- Create a container element -->
+<div id="player"></div>
+
+<!-- Create the player with your settings and container ID -->
+<script>
+  p = new spine.SpinePlayer("player", {
+    jsonUrl: './0067.json',
+    atlasUrl: './0067.atlas.txt',
+    backgroundColor: "#666666",
+    premultipliedAlpha: true
+  });
+</script>
+</body>
+</html>
